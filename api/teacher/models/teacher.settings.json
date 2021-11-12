@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teachers",
+  "info": {
+    "name": "Teacher",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "lavozimi": {
+      "type": "string"
+    },
+    "boshlaganVaqti": {
+      "type": "string"
+    },
+    "ism": {
+      "type": "string"
+    },
+    "familiya": {
+      "type": "string"
+    },
+    "xodimpassport": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "login": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    }
+  }
+}

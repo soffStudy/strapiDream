@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FIO": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string"
+    },
+    "payment": {
+      "type": "string"
+    },
+    "payment2": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "statusRealTime": {
+      "type": "string"
+    },
+    "passport": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "actives": {
+      "type": "string"
+    },
+    "ustozid": {
+      "type": "string"
+    },
+    "sana1": {
+      "type": "string"
+    },
+    "sana2": {
+      "type": "string"
+    }
+  }
+}

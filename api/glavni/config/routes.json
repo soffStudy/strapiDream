@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/glavnis",
+      "handler": "glavni.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glavnis/count",
+      "handler": "glavni.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/glavnis/:id",
+      "handler": "glavni.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/glavnis",
+      "handler": "glavni.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/glavnis/:id",
+      "handler": "glavni.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/glavnis/:id",
+      "handler": "glavni.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
